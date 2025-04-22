@@ -1,0 +1,34 @@
+﻿@{
+    ViewBag.Title = "Shortest Path Finder";
+}
+
+<h2>Shortest Path</h2>
+
+<form method="post">
+    <label>From:</label>
+    <select class="form-control" name="from">
+        @foreach (var node in ViewBag.Nodes)
+        {
+            <option value="@node">@node</option>
+        }
+    </select>
+    <label>To:</label>
+    <select class="form-control" name="to">
+        @foreach (var node in ViewBag.Nodes)
+        {
+            <option value="@node">@node</option>
+        }
+    </select>
+    <br />
+    <button class="btn btn-success" type="submit">Calculate</button>
+</form>
+
+@if (ViewBag.Path != null)
+{
+    <p><strong>Path:</strong> @ViewBag.Path</p>
+    <p><strong>Distance:</strong> @ViewBag.Distance</p>
+}
+@if (ViewBag.Error != null)
+{
+    <p style="color:red;">@ViewBag.Error</p>
+}
