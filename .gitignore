@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/ShortestRouteOptimizer/ConsoleApp1/bin/Debug
+/ShortestRouteOptimizer/.vs/ShortestRouteOptimizer
+/ShortestRouteOptimizer/ConsoleApp1/obj/Debug
+/ShortestRouteOptimizer/packages
+/ShortestRouteOptimizer/ShortestRouteOptimizer.Test/bin/Debug
+/ShortestRouteOptimizer/ShortestRouteOptimizer.Test/obj/Debug
